@@ -13,7 +13,7 @@ function showExplain(){
     }
 }
 
-//Select Games Buttons
+//Select Weapon Buttons
 var gsButton
 var lsButton
 var snsButton
@@ -39,16 +39,19 @@ function MHfreedomUniteSelect(){
     MH4UltimateSelect()
     botonesArmas.innerHTML = '<input type="button" id = "greatSword">'+
         '<input type="button" id = "longSword">'+
-        '<input type="button" id = "swordAndShield"></br>'+
-        '<input type="button" id = "dualBlades">'+
+        '<input type="button" id = "swordAndShield">'+
+        '<input type="button" id = "dualBlades"></br>'+
         '<input type="button" id = "hammer">'+
-        '<input type="button" id = "huntingHorn"></br>'+
+        '<input type="button" id = "huntingHorn">'+
         '<input type="button" id = "lance">'+
         '<input type="button" id = "gunLance">'
         weaponDefine1()
         weaponTypeValue = [4.8, 4.8, 1.4, 1.4, 5.2, 5.2, 2.3, 2.3, 5.4, 3.1, 3.6]
         sharp=[0.5, 0.75, 1, 1.125, 1.25, 1.30, 1.5]
         elementSharpness=[0.25, 0.5, 0.75, 1, 1.0625, 1.125, 1.2]
+        sharpness = 0
+        elementSharp = 0
+        weaponType = 1
 }
 //MHfreedomUniteSelect()
 
@@ -66,6 +69,9 @@ function MH4UltimateSelect(){
         '<input type="button" id = "chargeBlade">'
         weaponDefine1()
         weaponDefine2()
+        sharpness = 0
+        elementSharp = 0
+        weaponType = 1
 }
 
 
@@ -123,7 +129,7 @@ var weaponCompare = "background-position: -721px -3px"
 
         weaponSelect.style = weaponSelectIndicator
 
-        if(noneWeapon.innerHTML == "ERROR Chose a Weapon")
+        if(noneWeapon.innerHTML == "Chose a Weapon")
             {
         noneWeapon.innerHTML = "Chose Your Weapon"
         noneWeapon.style = "font-size: 25px;"+
@@ -341,7 +347,7 @@ var noneSharp = document.getElementById("sharpTittle")
 
     Select.style = buttonSelectIndicator
     
-    if(noneSharp.innerHTML == "ERROR Chose a Sharpness")
+    if(noneSharp.innerHTML == "Chose a Sharpness")
         {
         noneSharp.innerHTML = "Sharpness"
         noneSharp.style = "font-size: 25px;"+
@@ -573,13 +579,13 @@ function calculateFunction()
         if(weaponType == 1){
             rawNormal = 0
             elementNormal = 0
-            noneWeapon.innerHTML = "ERROR Chose a Weapon"
+            noneWeapon.innerHTML = "Chose a Weapon"
             noneWeapon.style = "color: red;"+
                                 "font-size: 20px;"+
                                 "background-color: white;"+
                                 "border: solid black 2px;"+
-                                "width: 328px;"+
-                                "margin-left: 24px"
+                                "width: 80%;"+
+                                "margin:auto;"
 
             var colorNoneWeapon = "border: solid red 3px"
             gsButton.style = colorNoneWeapon
@@ -598,13 +604,13 @@ function calculateFunction()
     //Chose Sharpness Correction and None Chose
         if(sharpness == 0 && elementSharp == 0 ){
 
-            noneSharp.innerHTML = "ERROR Chose a Sharpness"
+            noneSharp.innerHTML = "Chose a Sharpness"
             noneSharp.style = "color: red;"+
                                 "font-size: 20px;"+
                                 "background-color: white;"+
                                 "border: solid black 2px;"+
-                                "width: 340px;"+
-                                "margin-left: 21px;"+
+                                "width: 80%;"+
+                                "margin-:auto;"+
                                 "margin-top: 5px;"
                                 
 
