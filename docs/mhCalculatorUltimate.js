@@ -1,8 +1,8 @@
 
 //explain button
-var explain = document.getElementById("explanation")
+/*var explain = document.getElementById("explanation")
 var explainText = document.getElementById("explanationText")
-explain.addEventListener("click",showExplain)
+explain.addEventListener("click",showExplain)*/
 
 function showExplain(){
     if (explainText.innerHTML == ""){
@@ -927,3 +927,4 @@ function buttonWidth2()
 
 console.log(sharp)
 console.log(weaponTypeValue)*/
+
