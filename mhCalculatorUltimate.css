@@ -2,12 +2,12 @@
 
 /* Page Base*/
 html{
-    height:99.7%;
+    width:99.7%;
 }
 body{
     padding: 5px;
     position: relative;
-    min-height: 100%;
+    min-width: 99%;
     background-color: rgba(0, 0, 0, 0.938);
     
 }
@@ -18,10 +18,11 @@ body{
     opacity: 0.2;
     top: -8px;
     left: -8px;
-    bottom: 0px;
-    right: -8px;
+    bottom: -305%;
+    right: 0px;
     position: absolute;
     z-index: -1;
+    background-repeat: repeat;
     
   }
 
@@ -146,69 +147,70 @@ h2 p{
 
 .full #botonesArmas input{
     background-image:url(weapon-icons-80px.png);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-bottom:5px;
     margin:2px;
     border: solid rgb(124, 75, 0) 3px;
+    background-size: 700px;
 }
 
 .full #botonesArmas input:active{
-    border:solid rgb(184, 159, 14) 4px
+    border:solid rgb(184, 159, 14) 4px;
 }
 
 #greatSword
 {
-    background-position: -1px -3px
+    background-position: -1px -2px
 }
 
 #longSword
 {
-    background-position: -85px -3px;
+    background-position: -62px -3px;
 }
 #swordAndShield
 {
-    background-position: -165px -3px;
+    background-position: -120px -3px;
 }
 
 #dualBlades
 {
-    background-position: -244px -3px;
+    background-position: -178px -3px;
 }
 
 #hammer
 {
-    background-position: -323px -3px;
+    background-position: -233px -3px;
 }
 
 #huntingHorn
 {
-    background-position: -403px -3px;
+    background-position: -293px -3px;
 }
 
 #lance
 {
-    background-position: -484px -3px;
+    background-position: -354px -3px;
 }
 
 #gunLance
 {
-    background-position: -564px -3px;
+    background-position: -411px -3px;
 }
 
 #switchAxe
 {
-    background-position: -644px -5px;
+    background-position: -470px -5px;
 }
 
 #insectGlaive
 {
-    background-position: -884px -2px;
+    background-position: -644px -2px;
 }
 
 #chargeBlade
 {
-    background-position: -804px -4px;
+    background-position: -586px -2px;
 }
 
 /*Datos Armas*/
@@ -307,7 +309,7 @@ h2 p{
     text-align: center;
     width: 230px;
     padding: 5px;
-    height:490px;
+    height:450px;
 
 }
 
@@ -350,13 +352,12 @@ h2 p{
 /*Comparison Box*/
 
 .comparison{
-   /* background-color: rgb(214, 236, 13);*/
+    /*background-color: rgb(214, 236, 13);*/
     width: 270px;
-    height: 500px;
+    height: 450px;
     margin:auto;
     text-align: center;
     padding: 0px 20px;
-    margin-bottom: 50px;
 }
 
 .comparison .comparisonTittle{
